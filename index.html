@@ -212,103 +212,283 @@
 </div>
 
 <!------------------------------------newgoods----------------------------------->
-<div class="newgoods margin">
-	<!--<input type="button"id="btnleft"/>-->
-	<ul>
-		<li>
-			<a href="#">
-				<div class="tg">
-					<img src="imgs/a2cf3b86ecfd35b2d270cd17ff264cbd.png" alt="" />
-				</div>
-				<div class="bg">
-					<b>小龙虾 4-6钱/只</b><br />
-					<span>￥75</span>
-				</div>				
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				<div class="tg">
-					<img src="imgs/8957b56358c3f21dbbf6cb42004ae006.png" alt="" />
-				</div>
-				<div class="bg">
-					<b>小龙虾 4-6钱/只</b><br />
-					<span>￥75</span>
-				</div>				
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				<div class="tg">
-					<img src="imgs/f3232b5b2d93ec3dbe49c3aae8f055e3.png" alt="" />
-				</div>
-				<div class="bg">
-					<b>小龙虾 4-6钱/只</b><br />
-					<span>￥75</span>
-				</div>				
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				<div class="tg">
-					<img src="imgs/7e3eb394a7084be90cc3f3f241a7c348.png" alt="" />
-				</div>
-				<div class="bg">
-					<b>小龙虾 4-6钱/只</b><br />
-					<span>￥75</span>
-				</div>				
-			</a>
-		</li>	
-		<li>
-			<a href="#">
-				<div class="tg">
-					<img src="imgs/5b96a46ba3fa9432278e910241cb4fb1.png" alt="" />
-				</div>
-				<div class="bg">
-					<b>小龙虾 4-6钱/只</b><br />
-					<span>￥75</span>
-				</div>				
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				<div class="tg">
-					<img src="imgs/90d2be28d239da2f0d93262dbac6b804.png" alt="" />
-				</div>
-				<div class="bg">
-					<b>小龙虾 4-6钱/只</b><br />
-					<span>￥75</span>
-				</div>				
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				<div class="tg">
-					<img src="imgs/8717586fab4432fd6ec95ba094971ee2.png" alt="" />
-				</div>
-				<div class="bg">
-					<b>小龙虾 4-6钱/只</b><br />
-					<span>￥75</span>
-				</div>				
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				<div class="tg">
-					<img src="imgs/f6d5f86c024a598e83bcd4cf11bb235a.png" alt="" />
-				</div>
-				<div class="bg">
-					<b>小龙虾 4-6钱/只</b><br /> 
-					<span>￥75</span>
-				</div>				
-			</a>
-		</li>	
-	</ul>	
+<div class="newgoods ">
+	<i class="btnleft" onclick="movetoleft()"></i>
+	<i class="btnright" onclick="movetoright()"></i>
+	<div class="margin insidenewgoods">
+		<ul id="goodslist">
+			<li>
+				<a href="#">
+					<div class="tg">
+						<img src="imgs/a2cf3b86ecfd35b2d270cd17ff264cbd.png" alt="" />
+					</div>
+					<div class="bg">
+						<b>小龙虾 4-6钱/只</b><br />
+						<span>￥75</span>
+					</div>				
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="tg">
+						<img src="imgs/8957b56358c3f21dbbf6cb42004ae006.png" alt="" />
+					</div>
+					<div class="bg">
+						<b>小龙虾 4-6钱/只</b><br />
+						<span>￥75</span>
+					</div>				
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="tg">
+						<img src="imgs/f3232b5b2d93ec3dbe49c3aae8f055e3.png" alt="" />
+					</div>
+					<div class="bg">
+						<b>小龙虾 4-6钱/只</b><br />
+						<span>￥75</span>
+					</div>				
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="tg">
+						<img src="imgs/7e3eb394a7084be90cc3f3f241a7c348.png" alt="" />
+					</div>
+					<div class="bg">
+						<b>小龙虾 4-6钱/只</b><br />
+						<span>￥75</span>
+					</div>				
+				</a>
+			</li>	
+			<li>
+				<a href="#">
+					<div class="tg">
+						<img src="imgs/5b96a46ba3fa9432278e910241cb4fb1.png" alt="" />
+					</div>
+					<div class="bg">
+						<b>小龙虾 4-6钱/只</b><br />
+						<span>￥75</span>
+					</div>				
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="tg">
+						<img src="imgs/90d2be28d239da2f0d93262dbac6b804.png" alt="" />
+					</div>
+					<div class="bg">
+						<b>小龙虾 4-6钱/只</b><br />
+						<span>￥75</span>
+					</div>				
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="tg">
+						<img src="imgs/8717586fab4432fd6ec95ba094971ee2.png" alt="" />
+					</div>
+					<div class="bg">
+						<b>小龙虾 4-6钱/只</b><br />
+						<span>￥75</span>
+					</div>				
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="tg">
+						<img src="imgs/f6d5f86c024a598e83bcd4cf11bb235a.png" alt="" />
+					</div>
+					<div class="bg">
+						<b>小龙虾 4-6钱/只</b><br /> 
+						<span>￥75</span>
+					</div>				
+				</a>
+			</li>
+<li>
+				<a href="#">
+					<div class="tg">
+						<img src="imgs/1f80c20697204cf1c367abebdc052360.png" alt="" />
+					</div>
+					<div class="bg">
+						<b>小龙虾 4-6钱/只</b><br />
+						<span>￥75</span>
+					</div>				
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="tg">
+						<img src="imgs/bcaf6bbd497b40e76ca94414347be57b.png" alt="" />
+					</div>
+					<div class="bg">
+						<b>小龙虾 4-6钱/只</b><br />
+						<span>￥75</span>
+					</div>				
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="tg">
+						<img src="imgs/4157106cf2f0961cdcdd0854da726b42.png" alt="" />
+					</div>
+					<div class="bg">
+						<b>小龙虾 4-6钱/只</b><br />
+						<span>￥75</span>
+					</div>				
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="tg">
+						<img src="imgs/b2065eab67acc5923a8ec71167a35f6a.png" alt="" />
+					</div>
+					<div class="bg">
+						<b>小龙虾 4-6钱/只</b><br /> 
+						<span>￥75</span>
+					</div>				
+				</a>
+			</li>			
+		</ul>
+	</div>		
 </div>
 <!---------------------------------选项卡，人气推荐---------------------------------->
-<div>
-	
-	
+<div id="people">
+	<div class="title margin">
+		<h2>人气推荐</h2>
+		<span>周一周四上新</span>
+		<a href="#">更多新品&gt;</a>
+		<ul id="xuanxiang">
+			<li onclick="xuanze(1)" class="act"><i>编辑推荐</i></li>
+			<li onclick="xuanze(2)" class=""><i>人气周榜</i></li>
+			<li onclick="xuanze(3)" class=""><i>热销总榜</i></li>
+		</ul>		
+	</div>
+	<div id="neirong">
+		<div class="bjtj margin">
+			<div class="bjtj_l">
+				<a href="#">
+					<img src="imgs/ab53c59e7803253850e6eb36ee32f49c.jpg" alt="" />					
+				</a>
+			</div>
+			<div class="bjtj_r">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="imgs/f59b194293c02ed342fd4b090b536ff9.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/f59b194293c02ed342fd4b090b536ff9.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/f59b194293c02ed342fd4b090b536ff9.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/f59b194293c02ed342fd4b090b536ff9.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/f59b194293c02ed342fd4b090b536ff9.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/f59b194293c02ed342fd4b090b536ff9.jpg" alt="" />
+						</a>
+					</li>
+				</ul>	
+			</div>
+		</div>
+		<div class="bjtj margin"  id="hide">
+			<div class="bjtj_l">
+				<a href="#">
+					<img src="imgs/4b0f36766f33d90a43daa14f1bd46eaf.jpg" alt="" />					
+				</a>
+			</div>
+			<div class="bjtj_r">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="imgs/740d0190504deaf14a38be99a04e4d47.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/740d0190504deaf14a38be99a04e4d47.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/740d0190504deaf14a38be99a04e4d47.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/740d0190504deaf14a38be99a04e4d47.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/740d0190504deaf14a38be99a04e4d47.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/740d0190504deaf14a38be99a04e4d47.jpg" alt="" />
+						</a>
+					</li>
+				</ul>	
+			</div>
+		</div>
+		<div class="bjtj margin"  id="hide">
+			<div class="bjtj_l">
+				<a href="#">
+					<img src="imgs/9908f196cc60325412c2b0c4c2f0562a.jpg" alt="" />					
+				</a>
+			</div>
+			<div class="bjtj_r">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="imgs/af36f4c8bc344c9f1f363cacb63cde5b.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/af36f4c8bc344c9f1f363cacb63cde5b.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/af36f4c8bc344c9f1f363cacb63cde5b.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/af36f4c8bc344c9f1f363cacb63cde5b.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/af36f4c8bc344c9f1f363cacb63cde5b.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="imgs/af36f4c8bc344c9f1f363cacb63cde5b.jpg" alt="" />
+						</a>
+					</li>
+				</ul>	
+			</div>
+		</div>		
+	</div>
 </div>
 <!---------------------------------居家---------------------------------->
 <div class="title margin">
@@ -460,5 +640,7 @@
 
 
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/tools.js"></script>
+<!--<script type="text/javascript" src="js/tools.js"></script>-->
 <script type="text/javascript" src="js/lunbotu.js"></script>
+<script type="text/javascript" src="js/xuanxiangka.js"></script>
+<script type="text/javascript" src="js/newgoods.js"></script>

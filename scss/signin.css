@@ -1,0 +1,49 @@
+.margin {
+  width: 1000px;
+  margin: 0 auto; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background: #efefef; }
+  header .hed {
+    height: 80px;
+    padding: 25px 0; }
+    header .hed .logo {
+      height: 80px;
+      width: 500px;
+      float: left;
+      background: url(../imgs/sprite.png) 0 0; }
+    header .hed .login {
+      color: #666;
+      float: right;
+      font: 500 18px/80px ""; }
+      header .hed .login a {
+        color: #ca5252; }
+
+#main {
+  background: #EFEFEF; }
+  #main .main {
+    background: #fff;
+    height: 972px;
+    box-sizing: border-box;
+    padding: 23px 50px 136px;
+    border-radius: 5px; }
+    #main .main h1 {
+      color: #ca5252;
+      font: 600 24px/72px ""; }
+
+footer {
+  background: #efefef;
+  height: 90px; }
+  footer .foot .foot_b {
+    text-align: center;
+    color: #999;
+    padding-top: 30px;
+    font: 12px/18px ""; }
+    footer .foot .foot_b a {
+      color: #999; }
+
+/*# sourceMappingURL=signin.css.map */

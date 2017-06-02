@@ -1,0 +1,56 @@
+@charset "utf-8";
+.margin{width: 1000px;margin: 0 auto;}
+*{margin: 0;padding: 0;}
+$samewidth:1000px;
+/////////////////////////////header//////////////////////////////
+header{
+    background: #efefef;
+    .hed{
+        height: 80px;
+        padding: 25px 0;
+        .logo{
+            height: 80px;
+            width: 500px;
+            float: left;
+            background: url(../imgs/sprite.png) 0 0;
+        }
+        .login{
+            color: #666;
+            float: right;
+            font:500 18px/80px "";
+            a{color: #ca5252;}
+        }
+    }
+}
+/////////////////////////////main////////////////////////////////
+#main{
+    background: #EFEFEF;
+    .main{
+        background: #fff;
+        height:972px;
+        box-sizing: border-box;
+        padding: 23px 50px 136px;
+        border-radius: 5px;
+        h1{
+           color: #ca5252;
+           font:600 24px/72px "";
+        }
+    }   
+}
+
+/////////////////////////////footer//////////////////////////////
+footer{
+    background: #efefef;
+    height: 90px;
+    .foot{
+        .foot_b{
+            text-align: center;
+            color: #999;
+            padding-top: 30px;
+            font:12px/18px "";
+            a{color: #999;}
+        }
+    }
+}
+
+

@@ -1,8 +1,8 @@
-function $1702(id){
+function $gid(id){
 	return document.getElementById(id);
 }
 
 
-function $1702create(name){
+function $cre(name){
 	return document.createElement(name);
 }

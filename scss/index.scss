@@ -133,11 +133,11 @@ nav{
         .inputtext{
             float: right;
             height: 32px;
-            width: 254px;
+            width: 210px;
             font:12px/22px "";
-            padding:0 15px 0 15px;
+            padding:0 10px 0 10px;
             border:none;border-bottom: 1px solid #d8cebc;
-            margin-top: 75px;
+            margin: 75px 5px 0 0;
             outline:medium;
         }
         .btn{
@@ -276,6 +276,28 @@ nav{
        float:right; 
        color:#000000;
     }
+    #xuanxiang{
+        float: left;
+        margin-left:20px;
+        li{
+            i{
+               display: block; 
+               font:12px/36px ""; 
+               margin-top: 19px; 
+               float:right; 
+               color:#000000;
+               border-bottom: 2px solid #fff;
+               cursor: pointer;   
+            }
+            
+        }
+        .act{ 
+            i{
+              color:#B4A078; 
+              border-bottom: 2px solid #B4A078;  
+            }   
+        }
+    }
 }
 //------------------------------manufacturer-------------------------//
 .manufacturer{
@@ -389,47 +411,144 @@ nav{
 .newgoods{
     overflow: hidden;
     height: 346px;
-    ul{ width: 2176px;
-        
-        height: 100%;
-        li{ display: block;
-        float: left;
-        width: 272px;
-            a{  display: block;
-                .tg{
-                    width: 272px; 
-                    height: 272px;
-                    //border: 1px solid #fff;
-                    overflow: hidden;
-                    img{
+    position: relative;
+    i{
+        display: block;
+        width: 30px;
+        height:30px ;
+        position: absolute;
+    }
+    i:hover{
+        cursor: pointer;
+    }
+    .btnleft{
+        z-index: 11;
+        top:130px;left:180px;
+        background:url(../imgs/icon-normal-s69871fd5de-f1a3de01b3.png) no-repeat 0 -2329px;
+    }
+    .btnright{
+        z-index: 11;
+        top:130px;left:1307px;
+        background:url(../imgs/icon-normal-s69871fd5de-f1a3de01b3.png) no-repeat 0 -4319px;
+    }
+    .insidenewgoods{
+        overflow: hidden;
+        position: relative;
+        height: 344px;
+        ul{ width: 3264px;
+            position: absolute;
+            left: 0;
+            top: 0;
+           li{ display: block;
+               float: left;
+               width: 272px;
+                a{
+                    display: block;
+                    .tg{
                         width: 272px; 
                         height: 272px;
+                        //border: 1px solid #fff;
+                        overflow: hidden;
+                        img{
+                            width: 272px; 
+                            height: 272px;
+                            transition: .5s;
+                        }
+    
+                    }
+                    .bg{
+                        width:272px;
+                        height:50px;
+                        padding-top: 22px;
+                        text-align: center;
+                        b{font:700 12px/22px "";color: #000;}
+                        span{font:700 10px/22px "";color: #cc3340;}
+                    }
+                }
+                a:hover .tg {
+                    border: 1px solid #F4F0EA;
+       
+                   img {
+                        width: 270px; 
+                        height: 270px;
+                        transform: scale(1.2,1.2);
+                    }   
+                }
+                a:hover .bg{background: #f4f0ea;} 
+            }
+        }    
+    }
+   
+}
+//////////////////////////////人气推荐///////////////////////////////
+#people{
+    #neirong{
+        #hide{display: none;}//隐藏多余选项内容
+        margin-top: 2px;
+        background: #D8CEBC;
+        padding: 10px 0;
+        .bjtj{
+            justify-content: space-between;
+            display: flex;
+            .bjtj_l{
+                height:450px;
+                width: 390px;
+                a{
+                    display: block;
+                    overflow: hidden;
+                    height:450px;
+                     width: 390px;
+                    img{
+                        height:450px;
+                        width: 390px;
                         transition: .5s;
                     }
-
                 }
-                .bg{
-                    width:272px;
-                    height:50px;
-                    padding-top: 22px;
-                    text-align: center;
-                    b{font:700 12px/22px "";color: #000;}
-                    span{font:700 10px/22px "";color: #cc3340;}
+                a:hover{
+                    img{
+                        transform: scale(1.2,1.2);
+                    }
                 }
             }
-            a:hover .tg {
-                border: 1px solid #F4F0EA;
-   
-               img {
-                    width: 270px; 
-                    height: 270px;
-                    transform: scale(1.2,1.2);
-                }   
+            .bjtj_r{
+                margin-left: 10px;
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    height: 450px;
+                    width: 690px; 
+                    overflow: hidden;
+                    li{
+                       margin-bottom: 10px;
+                       a{
+                           display: block;
+                           height: 230px;
+                           width: 225px;
+                           overflow: hidden;
+                           img{
+                               height: 230px;
+                               width: 225px;
+                               transition: .5s;
+                           }
+                       }
+                       a:hover{
+                           img{
+                               transform: scale(1.2,1.2);
+                           }
+                       }
+                    }
+                }
             }
-            a:hover .bg{background: #f4f0ea;} 
+            
         }
     }
+    
 }
+
+
+
+
 ///////////////////////////////居家/////////////////////////////////
 .jujia{   
     ul{
@@ -553,6 +672,9 @@ nav{
                     .wx1:hover{
                         cursor: pointer;
                         .ewm{display: block; }  
+                    }
+                    .wx3:hover{
+                        cursor: pointer;
                     }
                 }
             }
